@@ -1,0 +1,34 @@
+{
+  "name": "@sheikhaamir/jira-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP server for Jira integration with advanced features: pod aliases, full pagination support, and intelligent ticket analysis",
+  "type": "module",
+  "bin": {
+    "jira-mcp": "build/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "jira",
+    "model-context-protocol",
+    "jira-api",
+    "atlassian",
+    "ticket-analysis"
+  ],
+  "author": "Sheikh Aamir",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.4",
+    "axios": "^1.7.9",
+    "dotenv": "^16.4.7"
+  },
+  "devDependencies": {
+    "@types/form-data": "^2.2.1",
+    "@types/node": "^22.10.5",
+    "typescript": "^5.7.2"
+  }
+}
