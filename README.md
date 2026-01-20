@@ -1,4 +1,4 @@
-# Jira MCP Server
+# Jira Analysis MCP
 
 A powerful Model Context Protocol (MCP) server for seamless Jira integration with AI assistants like Claude. Features advanced search capabilities, intelligent pod aliases, comprehensive ticket analysis, and full API support.
 
@@ -28,8 +28,8 @@ A powerful Model Context Protocol (MCP) server for seamless Jira integration wit
 ### Installation
 
 ```bash
-git clone https://github.com/sheikhaamir/jira-mcp-server.git
-cd jira-mcp-server
+git clone https://github.com/sheikhaamir/jira-analysis-mcp.git
+cd jira-analysis-mcp
 npm install
 npm run build
 ```
@@ -59,7 +59,7 @@ Edit `~/Library/Application Support/Claude/claude_desktop_config.json`:
   "mcpServers": {
     "jira": {
       "command": "node",
-      "args": ["/absolute/path/to/jira-mcp-server/build/index.js"],
+      "args": ["/absolute/path/to/jira-analysis-mcp/build/index.js"],
       "env": {
         "JIRA_URL": "https://your-domain.atlassian.net",
         "JIRA_EMAIL": "your-email@example.com",
@@ -82,7 +82,7 @@ Create or edit `~/.cursor/mcp_settings.json`:
   "mcpServers": {
     "jira": {
       "command": "node",
-      "args": ["/absolute/path/to/jira-mcp-server/build/index.js"],
+      "args": ["/absolute/path/to/jira-analysis-mcp/build/index.js"],
       "env": {
         "JIRA_URL": "https://your-domain.atlassian.net",
         "JIRA_EMAIL": "your-email@example.com",
@@ -223,7 +223,7 @@ npm run watch
 
 ### Project Structure
 ```
-jira-mcp-server/
+jira-analysis-mcp/
 ├── src/
 │   ├── index.ts          # MCP server implementation
 │   └── jira-client.ts    # Jira API client with pagination

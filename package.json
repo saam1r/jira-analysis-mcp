@@ -1,10 +1,10 @@
 {
-  "name": "@sheikhaamir/jira-mcp-server",
+  "name": "@sheikhaamir/jira-analysis-mcp",
   "version": "1.0.0",
   "description": "MCP server for Jira integration with advanced features: pod aliases, full pagination support, and intelligent ticket analysis",
   "type": "module",
   "bin": {
-    "jira-mcp": "build/index.js"
+    "jira-analysis-mcp": "build/index.js"
   },
   "scripts": {
     "build": "tsc",
